@@ -9,9 +9,9 @@
 
 The convolution operation is represented mathematically as:
 
-\[
+$$
 (f * g)(t) = \int_{-\infty}^{\infty} f(\tau)g(t - \tau) d\tau \quad \text{(1)}
-\]
+$$
 
 where \(f\) is the TEC signal and \(g\) is the Dirac delta function. The Dirac delta function, \(\delta(t - \tau)\), is used to model an impulse at a specific point in time.
 
