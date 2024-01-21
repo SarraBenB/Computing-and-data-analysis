@@ -5,7 +5,7 @@
 
 ***Wavefront propagation of the pressure field using the Finit element method***
 
-Done by Sarra Ben Brahim and supervised by **Pierre Boué** for the Computing and Data analysis project.
+Done by Sarra Ben Brahim and supervised by **Pierre Boué** for Computing and Data analysis project.
 
 ## Project Summary
 
