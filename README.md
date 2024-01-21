@@ -1,6 +1,6 @@
 # Computing-and-data-analysis
 
-![Project Image 1](images/image1.jpg)
+![Project Image 1](simulation1.png)
 *Caption for Image 1*
 
 ![Project Image 2](images/image2.jpg)
