@@ -1,7 +1,14 @@
 # Computing-and-data-analysis
 
 <img src="FEM_wavepropagation.gif" alt="Image 2" width="5555cm">
-*Wavefront propagation using the Finit element method*
+**Wavefront propagation using the Finit element method**
+
+
+## Project Summary
+
+The objective of this project is to model the propagation of wavefronts in the Ionosphere by employing convolution with a Dirac function on the Total Electron Content (TEC) signal received from a satellite. Additionally, the Finite Element Method is applied to simulate the impact on the pressure field in the ionosphere during natural hazards, such as earthquakes. Specifically, the focus is on replicating wave propagation in Turkey, considering the earthquake that occurred on February 6, 2023. The TEC data during the earthquake is sourced from CDDIS Earthdata NASA.\\
+
+To go into a comprehensive understanding of the ionosphere and extract vital information, I initially opted for a straightforward simulation approach. Understanding the ionosphere is crucial, particularly in monitoring natural hazards on Earth. When events like earthquakes happen, they generate atmospheric waves that travel the sky and reach the ionosphere, situated approximately 50 km to 1000 km above the Earth's surface. These events perturbate the total electron content in the ionosphere, 
 
 ## Theory :  Mathematical Equations and Methods
 
@@ -41,36 +48,8 @@ $$
 c^2 T^2 \Delta p(\mathbf{x}, t) - p(\mathbf{x}, t) = - 2 p(\mathbf{x}, t - T) + p(\mathbf{x}, t- 2 T) - c^2 T^2 q(\mathbf{x}, t)
 $$
 
-Multiplying by the test function \(v(\mathbf{x}, t)\), integration over the domain \(V\), and application of Green's first identity yields:
-
-\[
-- \int_V \left( c^2 T^2  \nabla p(\mathbf{x}, t) \cdot \nabla v(\mathbf{x}, t) + p(\mathbf{x}, t) v(\mathbf{x}, t) \right) \mathrm{d}x = \int_V \left( - 2 p(\mathbf{x}, t - T) + p(\mathbf{x}, t- 2 T) - c^2 T^2 q(\mathbf{x}, t) \right) v(\mathbf{x}, t) \mathrm{d}x
-
-\]
-
-where \(v(\mathbf{x}, t) = 0\) on \(\partial V\) where \(p(\mathbf{x}, t)\) is known (e.g., due to fixed boundary conditions), either in case of a pure Dirichlet boundary condition or \(\frac{\partial}{\partial n} p(\mathbf{x}, t) = 0\) on \(\partial V\) in case of a pure Neumann boundary condition. It is common to express the integral equation above in terms of the bilinear \(a(P, V)\) and linear \(L(V)\) forms:
-
-\[
-a(P, V) = \int_V \left( c^2 T^2  \nabla p(\mathbf{x}, t) \cdot \nabla v(\mathbf{x}, t) + p(\mathbf{x}, t) v(\mathbf{x}, t) \right) \mathrm{d}x
-\]
-
-\[
-L(V) = \int_V \left( 2 p(\mathbf{x}, t - T) - p(\mathbf{x}, t- 2 T) + c^2 T^2 q(\mathbf{x}, t) \right) v(\mathbf{x}, t) \mathrm{d}x
-\]
-
-where
-
-\[
-a(P, V) = L(V)
-\]
 
 
-
-
-
-## Project Summary
-
-This goal of this project is to try and simulate the wavefront propagation in the Ionosphere using the convolution with a dirac and the Finit element method.
 
 ## Getting Started
 
