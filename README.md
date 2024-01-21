@@ -13,7 +13,7 @@ To go into a comprehensive understanding of the ionosphere and extract vital inf
 
 ## Theory :  Mathematical Equations and Methods
 
-# Convolution with Dirac Delta Function
+### Convolution with Dirac $$\Delta$$ Function
 
 The convolution operation is represented mathematically as:
 
@@ -23,7 +23,7 @@ $$
 
 where $$(f)$$ is the TEC signal and $$(g)$$ is the Dirac delta function. The Dirac delta function, $$\delta(t - \tau)$$, is used to model an impulse at a specific point in time.
 
-## Finite Element Method (FEM)
+### Finite Element Method (FEM)
 
 FEM is a numerical technique used for solving partial differential equations (PDEs) by dividing the domain into small elements. The TEC signal propagation can be modeled using the wave equation 
 
