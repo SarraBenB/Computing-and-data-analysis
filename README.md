@@ -20,8 +20,10 @@ where \(f\) is the TEC signal and \(g\) is the Dirac delta function. The Dirac d
 FEM is a numerical technique used for solving partial differential equations (PDEs) by dividing the domain into small elements. The TEC signal propagation can be modeled using the wave equation 
 
 $$
-\frac{\partial^2 u}{\partial t^2} = c^2 \nabla^2 u \quad \text{(Reference: Ludovic Metivier & Romain Brossier lecture on Full waveform inversion)}
+\frac{\partial^2 u}{\partial t^2} = c^2 \nabla^2 u \quad
 $$
+
+$$\textit{(Reference: Ludovic Metivier & Romain Brossier lecture on Full waveform inversion)}$$
 
 where \(u\) is the displacement field and \(c\) is the wave speed. To achieve this, we need to discretize the domain into elements and solve for the displacement field at each node using finite element approximations. Boundary conditions, such as the absorption boundary condition, can also be implemented to capture the TEC signal wavepacket behavior.
 
