@@ -1,7 +1,7 @@
 # Simulation of The Wavefront Propagation In The Ionosphere 
 
 
-<img src="FEM_wavepropagation.gif" alt="Image 2" width="5555cm">
+<img src="FEM_wavepropagation.gif" alt="Image 1" width="5555cm">
 
 ***Wavefront propagation of the pressure field using the Finit element method***
 
@@ -11,7 +11,7 @@ Done by Sarra Ben Brahim and supervised by **Pierre Boué** for Computing and Da
 
 The objective of this project is to model the propagation of wavefronts in the Ionosphere by employing convolution with a Dirac function on the Total Electron Content (TEC) signal received from a satellite and solving in order to solve a simple forward problem. Additionally, the Finite Element Method (FEM) is applied to simulate the impact on the pressure field in the ionosphere during natural hazards, such as earthquakes. Specifically, the focus is on replicating wave propagation in Turkey, considering the earthquake that occurred on February 6, 2023. The TEC data during the earthquake is sourced from CDDIS Earthdata NASA.
 
-To go into a comprehensive understanding of the ionosphere and extract vital information, I initially opted for a straightforward simulation approach. Understanding the ionosphere is crucial, particularly in monitoring natural hazards on Earth. When events like earthquakes happen, they generate atmospheric waves that travel the sky and reach the ionosphere, situated approximately 50 km to 1000 km above the Earth's surface. These events perturbate the total electron content in the ionosphere and can be detect it faster with real-time GNSS station than traditional GNSS station (GUARDIAN project).
+To go into a comprehensive understanding of the ionosphere and extract vital information, I initially opted for a straightforward simulation approach. Understanding the ionosphere is crucial, particularly in monitoring natural hazards on Earth. When events like earthquakes happen, they generate atmospheric/acoustic waves that travel the sky and reach the ionosphere, situated approximately 50 km to 1000 km above the Earth's surface. These events perturbate the total electron content in the ionosphere and can be detect it faster with real-time GNSS station than traditional GNSS station (GUARDIAN project).
 
 ## Theory :  Mathematical Equations and Methods
 
@@ -51,6 +51,37 @@ c^2 T^2 \Delta p(\mathbf{x}, t) - p(\mathbf{x}, t) = - 2 p(\mathbf{x}, t - T) + 
 $$
 
 
+## Computing steps and Results
+
+*Step 1 : Simple simulation solution* 
+
+For this first step, the goal was to actually implement a very simple simulation to represent approximatly the wavefront propagation. We created circles that would expend at each time as it increases using the simple formula $d= v/t$. The velocity chosen here is equal to the velocity in the air as we chose to work with atmospheric-acoustic waves to better represent the waves in the Ionosphere. The result shows a simulation of how the wavefront should propagate from a source which is here located in Turkey.
+
+
+<img src="wave.png" alt="Image 2" width="1555cm">
+
+
+*Step 2 : Finit element method*: In this step, I implemented a code that models the propagation of a pressure wave in the Ionosphere over a specified duration using a finite difference approach and the 2D wave equation. It initializes the pressure field with a disturbance, updates it iteratively considering the Laplacian and speed of sound, and visualizes the evolving wave on a map. 
+
+<img src="FEM_wavepropagation.gif" alt="Image 3" width="1555cm">
+
+
+*Step 3 : Convolution of sTEC signal with a dirac*: In this step, I implemented a code that first do the convolution of the sTEC signal with a dirac, and then implement this in convolution in a map to observe the wavefront propagation in space. 
+
+<img src="Convolution.png" alt="Image 4" width="1555cm">
+
+<img src="wavefront propagation from a convolution.png" alt="Image 5" width="1555cm">
+
+
+
+
+
+## Discussion
+
+
+We successfully simulated wave propagation in the Ionosphere, but our methods have some limitations. To improve our results, we need to explore other options. Specifically, the Finite Element Method shows the pressure field propagation as expected, but it doesn't consider absorption conditions. Including absorption conditions is important to accurately model how waves attenuates over time.
+
+Another area for improvement is the simulation of wavefront propagation using the convolution of sTEC with a Dirac. Currently, we mostly see one wavefront instead of the entire propagation over time. This implementation was challenging as we had to apply the convolution to each pixel to capture the complete time-dependent propagation of the sTEC signal.
 
 
 ## Reference
