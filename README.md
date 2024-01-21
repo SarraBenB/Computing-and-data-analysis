@@ -1,7 +1,7 @@
 # Computing-and-data-analysis
 
-<img src="FEM_wavepropagation.gif" alt="Image 2" width="555cm">
-*Caption for Image 2*
+<img src="FEM_wavepropagation.gif" alt="Image 2" width="1555cm">
+*Wavefront propagation using the Finit element method*
 
 ## Theory :  Mathematical Equations and Methods
 
