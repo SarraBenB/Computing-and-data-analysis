@@ -1,4 +1,4 @@
-# Simulation of wavefront propagation in the Ionosphere 
+# Simulation Of The Wavefront Propagation In The Ionosphere 
 
 <img src="FEM_wavepropagation.gif" alt="Image 2" width="5555cm">
 **Wavefront propagation using the Finit element method**
