@@ -56,6 +56,8 @@ $$
 ## Reference
 
 [1] GUARDIAN Project: Martire, L., Krishnamoorthy, S., Vergados, P., Romans, L. J., Szilágyi, B., Meng, X., Anderson, J. L., Komjáthy, A., Bar-Sever, Y. E. (2023) The GUARDIAN system - a GNSS upper atmospheric real-time disaster information and alert network, GPS Solutions 27(32), DOI 10.1007/s10291-022-01365-6.
+
 [2] Ludovic Metivier & Romain Brossier lecture on Full waveform inversion
+
 [3] Near-real-time TEC data from GUARDIAN are available through the NASA Crustal Dynamics Data Information System (CDDIS) 
 
