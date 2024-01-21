@@ -13,7 +13,7 @@ To go into a comprehensive understanding of the ionosphere and extract vital inf
 
 ## Theory :  Mathematical Equations and Methods
 
-### Convolution with Dirac $$\Delta$$ Function
+### Convolution with Dirac Function
 
 The convolution operation is represented mathematically as:
 
