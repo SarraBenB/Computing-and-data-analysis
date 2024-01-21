@@ -1,4 +1,4 @@
-# Simulation Of The Wavefront Propagation In The Ionosphere 
+# Simulation of The Wavefront Propagation In The Ionosphere 
 
 
 <img src="FEM_wavepropagation.gif" alt="Image 2" width="5555cm">
