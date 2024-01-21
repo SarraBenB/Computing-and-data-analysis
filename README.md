@@ -30,7 +30,7 @@ $$
 \frac{\partial^2 u}{\partial t^2} = c^2 \nabla^2 u \quad
 $$
 
-where \(u\) is the displacement field and \(c\) is the wave speed. To achieve this, we need to discretize the domain into elements and solve for the displacement field at each node using finite element approximations. Boundary conditions, such as the absorption boundary condition, can also be implemented to capture the TEC signal wavepacket behavior.$\textit{(Reference: Ludovic Metivier & Romain Brossier lecture on Full waveform inversion)}$
+where \(u\) is the displacement field and \(c\) is the wave speed. To achieve this, we need to discretize the domain into elements and solve for the displacement field at each node using finite element approximations. Boundary conditions, such as the absorption boundary condition, can also be implemented to capture the TEC signal wavepacket behavior.\textit{(Reference: Ludovic Metivier & Romain Brossier lecture on Full waveform inversion)}
 
 
 The FEM is based on expressing the partial differential equation (PDE) to be solved in its variational or weak form. The first step is to approximate the second-order temporal derivative in the wave equation by its backward finite difference:
