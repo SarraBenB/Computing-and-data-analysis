@@ -81,7 +81,7 @@ For this first step, the goal was to actually implement a very simple simulation
 
 We successfully simulated wave propagation in the Ionosphere, but our methods have some limitations. To improve our results, we need to explore other options. Specifically, the Finite Element Method shows the pressure field propagation as expected, but it doesn't consider absorption conditions. Including absorption conditions is important to accurately model how waves attenuates over time.
 
-Another area for improvement is the simulation of wavefront propagation using the convolution of sTEC with a Dirac. Currently, we mostly see one wavefront instead of the entire propagation over time. This implementation was challenging as we had to apply the convolution to each pixel to capture the complete time-dependent propagation of the sTEC signal.
+Another area for improvement is the simulation of wavefront propagation using the convolution of sTEC with a Dirac. Currently, we mostly see one wavefront instead of the entire propagation over time. This implementation is challenging as we need to apply the convolution to each pixel to capture the complete time-dependent propagation of the sTEC signal.
 
 
 ## Reference
