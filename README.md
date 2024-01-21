@@ -1,13 +1,13 @@
 # Computing-and-data-analysis
 
-![width=5cm](simulation1.png)
+<img src="simulation1.png" alt="Image 1" width="5cm">
 *Caption for Image 1*
 
-![Project Image 2](simulation2.png)
+<img src="simulation2.png" alt="Image 2" width="5cm">
 *Caption for Image 2*
 
-![Project Image 2](simulation3.png)
-*Caption for Image 2*
+<img src="simulation3.png" alt="Image 3" width="5cm">
+*Caption for Image 3*
 
 ## Project Summary
 
