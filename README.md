@@ -50,7 +50,7 @@ $$
 
 
 
-## Getting Started
+## Reference
 
 ## Usage
 
