@@ -7,10 +7,10 @@ $\textit{Convolution with Dirac Delta Function}$
 
 The convolution operation is represented mathematically as 
 
-\begin{equation}
+$\begin{equation}
 \tag{1}
 (f * g)(t) = \int_{-\infty}^{\infty} f(\tau)g(t - \tau) d\tau )
-\end{equation}
+\end{equation}$
 
 where $(f)$ is the TEC signal and $(g)$ is the Dirac delta function. The Dirac delta function, $( \delta(t - \tau) )$, is used to model an impulse at a specific point in time.
 
@@ -25,26 +25,26 @@ The FEM is based on expressing the partial differential equation (PDE) to be sol
 
 The first step towards this is to approximate the second-order temporal derivative in the wave equation by its backward [finite difference] $\textit{Reference : Ludovic Metivier & Romain Brossier lecture on Full waveform inversion}.$
 
-\begin{equation}
+$\begin{equation}
 \tag{2}
 \frac{\partial^2}{\partial t^2} p(\mathbf{x}, t) \approx \frac{p(\mathbf{x}, t) - 2 p(\mathbf{x}, t - T) + 
 p(\mathbf{x}, t- 2 T)}{T^2} ,
-\end{equation}
+\end{equation}$
 
 where $T$ is the sampling interval.
 
 By adding this approximation into the wave equation and rearranging terms, we get : 
 
-\begin{equation}
+$\begin{equation}
 c^2 T^2 \Delta p(\mathbf{x}, t) - p(\mathbf{x}, t) = - 2 p(\mathbf{x}, t - T) + 
 p(\mathbf{x}, t- 2 T) - c^2 T^2 q(\mathbf{x}, t) .
-\end{equation}
+\end{equation}$
 
 Multiplication by the test function $v(\mathbf{x}, t)$, integration over the domain $V$, and application of Green's first identity yields to : 
 
-\begin{equation}
+$\begin{equation}
 {-} \int_V \left( c^2 T^2  \nabla p(\mathbf{x}, t) \cdot \nabla v(\mathbf{x}, t) + p(\mathbf{x}, t) v(\mathbf{x}, t) \right) \mathrm{d}x = \int_V \left( - 2 p(\mathbf{x}, t - T) + p(\mathbf{x}, t- 2 T) - c^2 T^2 q(\mathbf{x}, t) \right) v(\mathbf{x}, t) \mathrm{d}x ,
-\end{equation}
+\end{equation}$
 
 where  $v(\mathbf{x}, t) = 0$ on $\partial V$ where $p(\mathbf{x}, t)$ is known - for instance due to fixed boundary conditions - was exploited in case of a pure Dirichlet boundary condition or $\frac{\partial}{\partial n} p(\mathbf{x}, t) = 0$ on $\partial V$ in case of a pure Neumann boundary condition. It is common to express the integral equation above in terms of the bilinear $a(P, V)$ and linear $L(V)$ forms 
 
