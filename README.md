@@ -8,7 +8,7 @@
 
 The objective of this project is to model the propagation of wavefronts in the Ionosphere by employing convolution with a Dirac function on the Total Electron Content (TEC) signal received from a satellite. Additionally, the Finite Element Method is applied to simulate the impact on the pressure field in the ionosphere during natural hazards, such as earthquakes. Specifically, the focus is on replicating wave propagation in Turkey, considering the earthquake that occurred on February 6, 2023. The TEC data during the earthquake is sourced from CDDIS Earthdata NASA.\\
 
-To go into a comprehensive understanding of the ionosphere and extract vital information, I initially opted for a straightforward simulation approach. Understanding the ionosphere is crucial, particularly in monitoring natural hazards on Earth. When events like earthquakes happen, they generate atmospheric waves that travel the sky and reach the ionosphere, situated approximately 50 km to 1000 km above the Earth's surface. These events perturbate the total electron content in the ionosphere, 
+To go into a comprehensive understanding of the ionosphere and extract vital information, I initially opted for a straightforward simulation approach. Understanding the ionosphere is crucial, particularly in monitoring natural hazards on Earth. When events like earthquakes happen, they generate atmospheric waves that travel the sky and reach the ionosphere, situated approximately 50 km to 1000 km above the Earth's surface. These events perturbate the total electron content in the ionosphere and can be detect it faster with real-time GNSS station than traditional GNSS station (GUARDIAN project).
 
 ## Theory :  Mathematical Equations and Methods
 
