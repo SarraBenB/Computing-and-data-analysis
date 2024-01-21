@@ -1,6 +1,6 @@
 # Computing-and-data-analysis
 
-![Project Image 1][width=5cm](simulation1.png)
+![width=5cm](simulation1.png)
 *Caption for Image 1*
 
 ![Project Image 2](simulation2.png)
