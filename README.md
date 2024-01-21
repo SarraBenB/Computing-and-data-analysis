@@ -1,4 +1,8 @@
 # Computing-and-data-analysis
+
+<img src="FEM_wavepropagation.gif" alt="Image 2" width="555cm">
+*Caption for Image 2*
+
 ## Theory :  Mathematical Equations and Methods
 
 # Convolution with Dirac Delta Function
@@ -59,11 +63,8 @@ a(P, V) = L(V)
 \]
 
 
-<img src="simulation2.png" alt="Image 2" width="555cm">
-*Caption for Image 2*
 
-<img src="simulation3.png" alt="Image 3" width="555cm">
-*Caption for Image 3*
+
 
 ## Project Summary
 
