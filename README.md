@@ -19,25 +19,25 @@ where \(f\) is the TEC signal and \(g\) is the Dirac delta function. The Dirac d
 
 FEM is a numerical technique used for solving partial differential equations (PDEs) by dividing the domain into small elements. The TEC signal propagation can be modeled using the wave equation 
 
-\[
+$$
 \frac{\partial^2 u}{\partial t^2} = c^2 \nabla^2 u \quad \text{(Reference: Ludovic Metivier & Romain Brossier lecture on Full waveform inversion)}
-\]
+$$
 
 where \(u\) is the displacement field and \(c\) is the wave speed. To achieve this, we need to discretize the domain into elements and solve for the displacement field at each node using finite element approximations. Boundary conditions, such as the absorption boundary condition, can also be implemented to capture the TEC signal wavepacket behavior.
 
 The FEM is based on expressing the partial differential equation (PDE) to be solved in its variational or weak form. The first step is to approximate the second-order temporal derivative in the wave equation by its backward finite difference:
 
-\[
+$$
 \frac{\partial^2}{\partial t^2} p(\mathbf{x}, t) \approx \frac{p(\mathbf{x}, t) - 2 p(\mathbf{x}, t - T) + p(\mathbf{x}, t- 2 T)}{T^2} \quad \text{(2)}
-\]
+$$
 
-where \(T\) is the sampling interval.
+where $(T)$ is the sampling interval.
 
 By adding this approximation into the wave equation and rearranging terms, we get:
 
-\[
+$$
 c^2 T^2 \Delta p(\mathbf{x}, t) - p(\mathbf{x}, t) = - 2 p(\mathbf{x}, t - T) + p(\mathbf{x}, t- 2 T) - c^2 T^2 q(\mathbf{x}, t)
-\]
+$$
 
 Multiplying by the test function \(v(\mathbf{x}, t)\), integration over the domain \(V\), and application of Green's first identity yields:
 
