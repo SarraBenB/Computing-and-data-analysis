@@ -58,7 +58,7 @@ $$
 For this first step, the goal was to actually implement a very simple simulation to represent approximatly the wavefront propagation. We created circles that would expend at each time as it increases using the simple formula $d= v/t$. The velocity chosen here is equal to the velocity in the air as we chose to work with atmospheric-acoustic waves to better represent the waves in the Ionosphere. The result shows a simulation of how the wavefront should propagate from a source which is here located in Turkey.
 
 
-<img src="wave.png" alt="Image 2" width="1555cm">
+<img src="wave.png" alt="Image 2" width="555cm">
 
 
 *Step 2 : Finit element method*: In this step, I implemented a code that models the propagation of a pressure wave in the Ionosphere over a specified duration using a finite difference approach and the 2D wave equation. It initializes the pressure field with a disturbance, updates it iteratively considering the Laplacian and speed of sound, and visualizes the evolving wave on a map. 
@@ -70,7 +70,7 @@ For this first step, the goal was to actually implement a very simple simulation
 
 <img src="Convolution.png" alt="Image 4" width="1555cm">
 
-<img src="wavefront propagation from a convolution.png" alt="Image 5" width="1555cm">
+<img src="wavefront propagation from a convolution.png" alt="Image 5" width="555cm">
 
 
 
